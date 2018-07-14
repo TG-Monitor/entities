@@ -1,6 +1,5 @@
 package ai.quantumsense.tgmonitor.entities;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -49,6 +48,6 @@ public class PeersImpl implements Peers {
     }
 
     private void update() {
-        updater.peersChanged(new HashSet<>(this.peers));
+        updater.peersChanged(new LinkedHashSet<>(this.peers));
     }
 }

@@ -9,9 +9,9 @@ public class PatternsImpl implements Patterns {
 
     private Set<String> patterns = new LinkedHashSet<>();
 
-//    public PatternsImpl(ServiceLocator serviceLocator) {
-//        serviceLocator.registerPatternsRepo(this);
-//    }
+    public PatternsImpl(ServiceLocator<Patterns> patternsLocator) {
+        patternsLocator.registerService(this);
+    }
 
     @Override
     public Set<String> getPatterns() {
