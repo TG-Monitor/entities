@@ -1,4 +1,4 @@
-package ai.quantumsense.tgmonitor.monitor.entities;
+package ai.quantumsense.tgmonitor.entities;
 
 import ai.quantumsense.tgmonitor.servicelocator.ServiceLocator;
 

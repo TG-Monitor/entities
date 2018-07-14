@@ -1,4 +1,4 @@
-package ai.quantumsense.tgmonitor.monitor.entities;
+package ai.quantumsense.tgmonitor.entities;
 
 import java.util.Set;
 
