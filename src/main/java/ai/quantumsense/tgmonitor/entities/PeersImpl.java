@@ -1,5 +1,7 @@
 package ai.quantumsense.tgmonitor.entities;
 
+import ai.quantumsense.tgmonitor.servicelocator.ServiceLocator;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -8,7 +10,8 @@ public class PeersImpl implements Peers {
     private Set<String> peers = new LinkedHashSet<>();
     private PeersUpdater updater;
 
-    public PeersImpl(PeersUpdater updater) {
+    public PeersImpl(ServiceLocator<Peers> peersLocator, PeersUpdater updater) {
+        peersLocator.registerService(this);
         this.updater = updater;
     }
 
