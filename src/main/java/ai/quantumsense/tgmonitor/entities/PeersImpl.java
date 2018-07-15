@@ -10,8 +10,7 @@ public class PeersImpl implements Peers {
     private Set<String> peers = new LinkedHashSet<>();
     private PeersUpdater updater;
 
-    public PeersImpl(ServiceLocator<Peers> peersLocator, PeersUpdater updater) {
-        peersLocator.registerService(this);
+    public PeersImpl(PeersUpdater updater) {
         this.updater = updater;
     }
 
